@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css" class="css">
+    
+    <script src="./src/js/index.js" defer></script>
+    
+    <title>Seja Bem-Vindo!</title>
+</head>
+<body>
+    <main>
+        <div id="register-container">
+            <div id="register-banner">
+                <div id="banner-layer">
+                    <h1>Seja bem-vindo</h1>
+                </div>
+            </div>
+
+            <div id="login-swap" class="">
+            <div id="login-form">
+                <h2>Faça seu login:</h2>
+                <div class="form-control">
+                    <label for="registered-email">Email</label>
+                    <input  type="email" 
+                            id="registered-email" 
+                            name="registered-email" 
+                            placeholder="Seu email" 
+                            required> 
+                </div>
+
+                <div class="form-control">
+                    <label for="registered-password">Senha</label>
+                    <input  type="password" 
+                            id="registered-password" 
+                            name="registered-password" 
+                            placeholder="Sua senha" 
+                            required> 
+                </div>
+                <P>Ainda não tem conta? 
+                    <span id="open-register">Crie aqui!</span>
+                </P>
+                <button id="login">Entrar</button>
+            </div>
+        </div>
+
+            <div id="register-swap" class="swap">
+            <div id="register-form">
+                <h2>Crie sua conta:</h2>
+                <p>Registre-se para utilizar todas ferramentas do sistema</p>
+
+                <div class="form-control">
+                    <label for="name">Nome</label>
+                    <input  type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Seu nome" 
+                            required> 
+                </div>
+
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input  type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Seu email" 
+                            required> 
+                </div>
+
+                <div class="form-control">
+                    <label for="password">Senha</label>
+                    <input  type="password" 
+                            id="password" 
+                            name="password" 
+                            placeholder="Crie uma senha" 
+                            required> 
+                </div>
+
+                <p>Quer ajuda para criar uma senha segura?
+                    <span id="open-gen-pass">Clique aqui!</span>
+                </p>
+
+                <div class="hide" id="generate-options">
+                    <p>Selecione as opções:</p>
+                    <div class="form-control">
+                        <label for="length">Quantidade de caracteres:</label>
+                        <input  type="number" 
+                                id="length" 
+                                name="length" 
+                                value="10"> 
+                    </div>
+
+                    <div class="form-control">
+                        <label for="letters">Letras:</label>
+                        <input  type="checkbox" 
+                                id="letters" 
+                                name="letters" 
+                                checked> 
+                    </div>
+
+                    <div class="form-control">
+                        <label for="numbers">Numeros:</label>
+                        <input  type="checkbox" 
+                                id="numbers" 
+                                name="numbers" 
+                                checked> 
+                    </div>
+
+                    <div class="form-control">
+                        <label for="symbols">Símbolos:</label>
+                        <input  type="checkbox" 
+                                id="symbols" 
+                                name="symbols" 
+                                checked> 
+                            </div>
+                        <button id="generate-password">Gerar senha</button>
+                </div>
+
+                <div id="generated-password">
+                    <p>Aqui está sua senha segura:</p>
+                    <h4></h4>
+                    <button id="copy-password">Copiar</button>
+                </div>
+
+                <div class="form-control">
+                    <label for="confirmpassword">Repita sua senha</label>
+                    <input  type="password" 
+                            id="confirmpassword" 
+                            name="confirmpassword" 
+                            placeholder="Repita sua senha" 
+                            required> 
+                </div>
+                    <input  type="submit" 
+                            name="submit" 
+                            id="submit" 
+                            value="Cadastrar">
+            </div>
+        </div>
+        </div>
+    </main>
+</body>
+</html>
